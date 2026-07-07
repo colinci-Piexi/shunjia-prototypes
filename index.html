@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>顺嘉SAP项目 - 原型预览</title>
+<style>
+:root {
+  --primary: #165DFF;
+  --page-bg: #F0F2F5;
+  --white: #fff;
+  --text-primary: #1D2129;
+  --text-secondary: #4E5969;
+  --border: #E8EAED;
+  --radius: 6px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 100vh; padding: 40px 24px;
+}
+.container { max-width: 520px; width: 100%; }
+h1 { font-size: 22px; font-weight: 600; margin-bottom: 8px; text-align: center; }
+.subtitle { font-size: 14px; color: var(--text-secondary); margin-bottom: 32px; text-align: center; }
+.card {
+  background: var(--white); border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04); padding: 24px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.prototype-link {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; border: 1px solid var(--border);
+  border-radius: var(--radius); text-decoration: none;
+  color: var(--text-primary); transition: all 0.15s;
+}
+.prototype-link:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(22,93,255,0.1);
+}
+.prototype-link .name { font-size: 15px; font-weight: 500; }
+.prototype-link .arrow { color: var(--text-placeholder,#C9CDD4); font-size: 16px; }
+.module-title { font-size: 12px; font-weight: 600; color: var(--text-secondary); padding: 12px 16px 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+.module-title:first-of-type { padding-top: 4px; }
+.footer { text-align: center; margin-top: 32px; font-size: 12px; color: #C9CDD4; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📐 顺嘉SAP项目 原型预览</h1>
+  <p class="subtitle">点击下方链接查看高保真交互原型 · 页面间已支持导航跳转</p>
+  <div class="card">
+    <div class="module-title">🧾 结算中心</div>
+    <a class="prototype-link" href="应收费用类型.html">
+      <span class="name">应收费用类型</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="prototype-link" href="应付费用类型.html">
+      <span class="name">应付费用类型</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="prototype-link" href="应收费用核算.html">
+      <span class="name">应收费用核算</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="prototype-link" href="应收费用暂估.html">
+      <span class="name">应收费用暂估</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="prototype-link" href="应收对账申请.html">
+      <span class="name">应收对账申请</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="prototype-link" href="应收对账审核.html">
+      <span class="name">应收对账审核</span>
+      <span class="arrow">→</span>
+    </a>
+    <div class="module-title">📋 订单管理</div>
+    <a class="prototype-link" href="商流订单管理.html">
+      <span class="name">商流订单管理</span>
+      <span class="arrow">→</span>
+    </a>
+    <div class="module-title">📊 主数据管理</div>
+    <a class="prototype-link" href="项目管理.html">
+      <span class="name">项目管理</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="prototype-link" href="合同管理.html">
+      <span class="name">合同管理</span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+  <p class="footer">顺嘉危运物流平台 · 高保真原型</p>
+</div>
+</body>
+</html>
